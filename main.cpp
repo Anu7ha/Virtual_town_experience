@@ -150,7 +150,7 @@ void drawClouds(float cloudR, float cloudG, float cloudB, float cloudA) {
     glEnable(GL_BLEND);
     glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
     // Cloud 1
-    glColor4f(cloudR, cloudG, cloudB, cloudA);
+    glColor4f(1.0f, 1.0f, 1.0f, cloudA);
     drawCircle(0.025,0.025,cloudOneSpeed-0.01, 0.28);
     drawCircle(0.025,0.025,cloudOneSpeed-0.04, 0.28);
     drawCircle(0.025,0.025,cloudOneSpeed-0.07, 0.28);
@@ -196,7 +196,7 @@ void drawCar1(int Scene)
     {
         drawRectangle(carPos-0.06,0.075, carPos-0.06,0.080, carPos+0.01,0.065, carPos-0.03,0.065, 0.9, 0.9, 0.0);
         glColor3f(0.9, 0.9, 0.0);
-        drawCircle(0.05,0.007,carPos-0.0, 0.06);
+        drawCircle(0.04,0.007,carPos-0.0, 0.06);
     }    
     drawRectangle(carPos-0.23,0.085, carPos-0.21,0.105, carPos-0.195,0.105, carPos-0.195,0.085, 0.71, 0.84, 1);
     drawRectangle(carPos-0.19,0.085, carPos-0.19,0.105, carPos-0.15,0.105, carPos-0.15,0.085, 0.71, 0.84, 1);
